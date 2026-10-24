@@ -1,0 +1,41 @@
+# ---------- Secrets ----------
+.env
+.env.local
+*.env
+
+# ---------- Java / Maven ----------
+backend/target/
+*.class
+*.jar
+!.mvn/wrapper/maven-wrapper.jar
+
+# ---------- Python ----------
+ai-service/__pycache__/
+ai-service/**/__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+
+# ---------- Node / React ----------
+node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/coverage/
+*.tsbuildinfo
+
+# ---------- IDE / OS ----------
+.idea/
+.vscode/
+.trae/
+.DS_Store
+Thumbs.db
+
+# ---------- Logs & temp ----------
+*.log
+logs/
+tmp/
+uploads/

@@ -1,0 +1,343 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------------------------------------------------
+   Design tokens. Every surface, border and text colour in the app is
+   derived from these variables so both themes stay consistent.
+------------------------------------------------------------------- */
+:root {
+  --color-canvas: 248 250 252;
+  --color-surface: 255 255 255;
+  --color-surface-muted: 241 245 249;
+  --color-line: 226 232 240;
+  --color-ink: 15 23 42;
+  --color-ink-muted: 71 85 105;
+  --color-ink-subtle: 148 163 184;
+  --color-primary: 79 70 229;
+  --color-primary-fg: 255 255 255;
+  --color-accent: 2 132 199;
+  --color-success: 22 163 74;
+  --color-warning: 161 98 7;
+  --color-danger: 220 38 38;
+  --color-code-bg: 241 245 249;
+  --color-code-fg: 15 23 42;
+  --shadow-color: 15 23 42;
+}
+
+.dark {
+  --color-canvas: 8 11 20;
+  --color-surface: 17 24 39;
+  --color-surface-muted: 30 41 59;
+  --color-line: 45 55 72;
+  --color-ink: 226 232 240;
+  --color-ink-muted: 148 163 184;
+  --color-ink-subtle: 100 116 139;
+  --color-primary: 99 102 241;
+  --color-primary-fg: 255 255 255;
+  --color-accent: 56 189 248;
+  --color-success: 74 222 128;
+  --color-warning: 251 191 36;
+  --color-danger: 248 113 113;
+  --color-code-bg: 2 6 23;
+  --color-code-fg: 226 232 240;
+  --shadow-color: 0 0 0;
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    border-color: rgb(var(--color-line));
+  }
+
+  html {
+    height: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-canvas text-ink font-sans antialiased;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  :focus-visible {
+    outline: 2px solid rgb(var(--color-primary));
+    outline-offset: 2px;
+  }
+
+  /* Firefox / standards-track scrollbars */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(var(--color-ink-subtle) / 0.5) transparent;
+  }
+
+  /* WebKit scrollbars */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--color-ink-subtle) / 0.45);
+    border: 3px solid transparent;
+    background-clip: content-box;
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(var(--color-ink-subtle) / 0.7);
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
+  ::selection {
+    background-color: rgb(var(--color-primary) / 0.25);
+  }
+}
+
+@layer components {
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-canvas;
+  }
+
+  .surface-card {
+    @apply rounded-xl border border-line bg-surface shadow-card;
+  }
+
+  .label-text {
+    @apply mb-1.5 block text-xs font-medium text-ink-muted;
+  }
+
+  .field-base {
+    @apply w-full rounded-lg border border-line bg-surface px-3 py-2 text-sm text-ink placeholder:text-ink-subtle transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-canvas disabled:cursor-not-allowed disabled:opacity-60;
+  }
+}
+
+/* ------------------------------------------------------------------
+   Markdown / typography for assistant answers
+------------------------------------------------------------------- */
+.markdown {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.markdown > *:first-child {
+  margin-top: 0;
+}
+
+.markdown > *:last-child {
+  margin-bottom: 0;
+}
+
+.markdown > * + * {
+  margin-top: 0.7rem;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  font-weight: 600;
+  line-height: 1.3;
+  margin-top: 1.15rem;
+  margin-bottom: 0;
+  color: rgb(var(--color-ink));
+}
+
+.markdown h1 {
+  font-size: 1.1875rem;
+}
+
+.markdown h2 {
+  font-size: 1.0625rem;
+}
+
+.markdown h3 {
+  font-size: 0.9688rem;
+}
+
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  font-size: 0.9063rem;
+}
+
+.markdown p {
+  margin: 0;
+}
+
+.markdown a {
+  color: rgb(var(--color-accent));
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 500;
+}
+
+.markdown a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.markdown strong {
+  font-weight: 600;
+  color: rgb(var(--color-ink));
+}
+
+.markdown ul,
+.markdown ol {
+  padding-left: 1.15rem;
+  margin: 0;
+}
+
+.markdown ul {
+  list-style: disc;
+}
+
+.markdown ol {
+  list-style: decimal;
+}
+
+.markdown li::marker {
+  color: rgb(var(--color-ink-subtle));
+}
+
+.markdown li + li {
+  margin-top: 0.25rem;
+}
+
+.markdown li > ul,
+.markdown li > ol {
+  margin-top: 0.25rem;
+}
+
+.markdown li > p {
+  margin: 0;
+}
+
+.markdown blockquote {
+  border-left: 3px solid rgb(var(--color-line));
+  padding-left: 0.75rem;
+  color: rgb(var(--color-ink-muted));
+  font-style: italic;
+}
+
+.markdown hr {
+  border: 0;
+  border-top: 1px solid rgb(var(--color-line));
+  margin: 1rem 0;
+}
+
+.markdown code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
+  font-size: 0.85em;
+  background-color: rgb(var(--color-code-bg));
+  color: rgb(var(--color-code-fg));
+  border: 1px solid rgb(var(--color-line));
+  border-radius: 0.375rem;
+  padding: 0.1rem 0.35rem;
+  white-space: break-spaces;
+}
+
+.markdown pre {
+  background-color: rgb(var(--color-code-bg));
+  border: 1px solid rgb(var(--color-line));
+  border-radius: 0.625rem;
+  padding: 0.75rem 0.875rem;
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.markdown pre code {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  white-space: pre;
+}
+
+.markdown table {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  font-size: 0.8438rem;
+}
+
+.markdown th,
+.markdown td {
+  border: 1px solid rgb(var(--color-line));
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.markdown th {
+  background-color: rgb(var(--color-surface-muted));
+  font-weight: 600;
+}
+
+.markdown img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+.markdown input[type='checkbox'] {
+  margin-right: 0.375rem;
+  accent-color: rgb(var(--color-primary));
+}
+
+/* Blinking cursor appended to the last block while an answer streams. */
+@keyframes md-cursor-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.markdown.is-streaming > *:last-child::after {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  margin-left: 2px;
+  vertical-align: text-bottom;
+  background-color: rgb(var(--color-primary));
+  animation: md-cursor-blink 1s step-end infinite;
+}
+
+/* ------------------------------------------------------------------
+   Motion preferences
+------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

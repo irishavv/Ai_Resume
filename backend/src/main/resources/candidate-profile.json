@@ -1,0 +1,278 @@
+{
+  "fullName": "Rishav Kumar",
+  "headline": "Java Developer | Core Java, Spring Boot, Hibernate, SQL & React",
+  "summary": "MCA graduate (2025) with strong proficiency in Core Java, SQL, Spring Boot, Hibernate, JPA and ReactJS. Hands-on experience building full-stack, database-driven applications with REST APIs, JDBC and Oracle SQL/MySQL, with an emphasis on clean code, secure coding practices and performance optimisation. Also experienced in Python-based data analysis and time series forecasting, with a published research paper on India's GDP. Familiar with SDLC, unit and integration testing, debugging and agile practices, and seeking a Java/backend developer role.",
+  "location": "Hyderabad, India (open to relocation, immediate joiner)",
+  "email": "irishav.ds@gmail.com",
+  "phone": "+91-9955317901",
+  "education": [
+    {
+      "institution": "Galgotias University, Greater Noida",
+      "degree": "Master of Computer Applications (MCA)",
+      "field": "Computer Applications",
+      "graduationYear": "2025",
+      "grade": "CGPA 8.13 / 10",
+      "verified": true
+    },
+    {
+      "institution": "MDU, Rohtak",
+      "degree": "Bachelor of Computer Applications (BCA)",
+      "field": "Computer Applications",
+      "graduationYear": "2022",
+      "grade": "65.13%",
+      "verified": true
+    }
+  ],
+  "skills": {
+    "languages": ["Core Java (OOP, Collections)", "SQL", "JavaScript", "Python"],
+    "frameworks": [
+      "Spring",
+      "Spring Boot",
+      "Hibernate",
+      "JPA",
+      "JDBC",
+      "Servlets",
+      "JSP",
+      "ReactJS",
+      "Node.js",
+      "Express.js",
+      "Tailwind CSS",
+      "HTML5",
+      "CSS3",
+      "pandas",
+      "NumPy",
+      "Matplotlib",
+      "Seaborn",
+      "scikit-learn"
+    ],
+    "databases": ["Oracle SQL", "MySQL", "MSSQL", "MongoDB"],
+    "tools": [
+      "Git",
+      "GitHub",
+      "Postman",
+      "Maven",
+      "IntelliJ IDEA",
+      "VS Code",
+      "Jupyter Notebook",
+      "Google Colab",
+      "Apache Tomcat",
+      "Vercel",
+      "Render"
+    ],
+    "concepts": [
+      "REST API design",
+      "Object-Oriented Programming",
+      "Exception handling",
+      "SDLC",
+      "Data Structures & Algorithms",
+      "RDBMS design & normalisation",
+      "SQL query optimisation",
+      "Secure coding (SQL injection prevention)",
+      "Unit & integration testing",
+      "ETL pipelines",
+      "Time series forecasting",
+      "Data visualisation"
+    ]
+  },
+  "currentlyLearning": [
+    "Advanced Java - Spring Boot, Hibernate, Servlets, JSP (JSpider)",
+    "IBM Business Automation Workflow (BAW) - workflow modelling, human tasks, integration services",
+    "Oracle Database SQL certification",
+    "Data visualisation and BI tooling (Power BI, Tableau)"
+  ],
+  "projects": [
+    {
+      "name": "Library Management System",
+      "description": "Full-stack web application using Spring Boot, Hibernate, Oracle SQL/MySQL and ReactJS for managing library operations.",
+      "technologies": [
+        "Java",
+        "Spring Boot",
+        "Hibernate",
+        "JPA",
+        "Oracle SQL",
+        "MySQL",
+        "REST APIs",
+        "ReactJS",
+        "JavaScript"
+      ],
+      "highlights": [
+        "Developed a full-stack web application using Spring Boot, Hibernate and ReactJS for library operations.",
+        "Designed and optimised Oracle SQL/MySQL queries and database structures for high-performance data integrity.",
+        "Built secure REST APIs for CRUD operations using Spring Boot and JPA with MySQL/Oracle SQL for data persistence.",
+        "Developed responsive ReactJS front-end components with hooks and Axios for seamless API integration.",
+        "Implemented input validation, global exception handling and book search/filter functionality.",
+        "Performed unit testing, integration testing and debugging to identify defects early and improve system stability."
+      ],
+      "repositoryUrl": "https://github.com/irishavv/library-management-system",
+      "liveUrl": "",
+      "status": "Completed",
+      "verified": true
+    },
+    {
+      "name": "JDBC User Management System",
+      "description": "Console-based user management application using Java JDBC with Oracle SQL/MySQL.",
+      "technologies": ["Java", "JDBC", "Oracle SQL", "MySQL", "PreparedStatement"],
+      "highlights": [
+        "Created a console-based user management application using Java JDBC and Oracle SQL/MySQL.",
+        "Implemented full CRUD operations with PreparedStatement to prevent SQL injection and enforce secure coding practices.",
+        "Designed database schemas, wrote complex SQL queries and supported transactional operations for enterprise-style data handling.",
+        "Added custom exception handling to manage duplicate user entries and invalid user IDs, improving application robustness.",
+        "Performed root cause analysis and debugging to fix data issues and performance anomalies."
+      ],
+      "repositoryUrl": "https://github.com/irishavv/jdbc-user-management-system",
+      "liveUrl": "",
+      "status": "Completed",
+      "verified": true
+    },
+    {
+      "name": "GDP Analysis - India (Time Series Forecasting)",
+      "description": "Time series analysis and GDP forecasting for India using statistical and machine learning models, with a published research paper.",
+      "technologies": [
+        "Python",
+        "pandas",
+        "NumPy",
+        "Matplotlib",
+        "Seaborn",
+        "scikit-learn",
+        "ARIMA",
+        "Random Forest",
+        "LSTM",
+        "Jupyter Notebook"
+      ],
+      "highlights": [
+        "Built an ETL pipeline in Python to clean and preprocess 40+ years of economic data using pandas and NumPy.",
+        "Applied ARIMA, Random Forest and LSTM models to forecast India's GDP, achieving 99.6% accuracy on test datasets.",
+        "Visualised trends and forecast results using Matplotlib and Seaborn.",
+        "Published the research paper \"Analyzing India's GDP: A Time Series-Based Forecasting Approach\"."
+      ],
+      "repositoryUrl": "https://github.com/irishavv/GDP-INDIA-",
+      "liveUrl": "",
+      "status": "Completed",
+      "verified": true
+    },
+    {
+      "name": "MediSync - Doctor Appointment System",
+      "description": "Role-based doctor appointment and management system with payment integration.",
+      "technologies": [
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "JWT",
+        "Razorpay",
+        "ReactJS",
+        "Vercel",
+        "Render"
+      ],
+      "highlights": [
+        "Developed secure REST APIs using Express and MongoDB.",
+        "Implemented role-based JWT authentication for patients, doctors and admins.",
+        "Integrated the Razorpay payment gateway for online consultation fees.",
+        "Built an admin approval dashboard for verifying doctors and monitoring appointments.",
+        "Deployed the frontend on Vercel and the backend on Render."
+      ],
+      "repositoryUrl": "",
+      "liveUrl": "https://medisync-8fz4.onrender.com",
+      "status": "Completed",
+      "verified": true
+    },
+    {
+      "name": "Blog Platform API (Spring Boot + SQL)",
+      "description": "RESTful backend for a blogging platform with user management and comments.",
+      "technologies": [
+        "Java",
+        "Spring Boot",
+        "Spring Data JPA",
+        "Hibernate",
+        "Oracle SQL",
+        "JWT",
+        "REST APIs"
+      ],
+      "highlights": [
+        "Developed REST APIs using Spring Boot, Spring Data JPA and Oracle SQL.",
+        "Implemented user registration, login, JWT token authentication and role-based access (USER/ADMIN).",
+        "Created endpoints for creating, updating and deleting blog posts and comments.",
+        "Used Hibernate for ORM and wrote native SQL queries for complex reports."
+      ],
+      "repositoryUrl": "",
+      "liveUrl": "",
+      "status": "In Progress",
+      "verified": true
+    },
+    {
+      "name": "Sales Performance Dashboard (Power BI & SQL)",
+      "description": "Interactive dashboard tracking sales KPIs, regional performance and forecasts.",
+      "technologies": ["Power BI", "DAX", "Power Query", "Oracle SQL"],
+      "highlights": [
+        "Extracted and transformed sales data from Oracle SQL using Power Query.",
+        "Created DAX measures for year-on-year growth, moving averages and top products.",
+        "Designed a multi-page dashboard with slicers, maps and forecast visuals.",
+        "Optimised the data model to reduce refresh time by 30%."
+      ],
+      "repositoryUrl": "",
+      "liveUrl": "",
+      "status": "Completed",
+      "verified": true
+    },
+    {
+      "name": "Portfolio Dashboard (React + Node)",
+      "description": "Personal dashboard that showcases projects and GitHub metrics.",
+      "technologies": ["ReactJS", "Tailwind CSS", "Node.js", "GitHub API", "Vercel"],
+      "highlights": [
+        "Built a responsive UI with React and Tailwind CSS, integrating the GitHub API to fetch repository statistics.",
+        "Set up a Node.js proxy to handle API rate limits and caching.",
+        "Deployed on Vercel with continuous deployment from GitHub."
+      ],
+      "repositoryUrl": "",
+      "liveUrl": "",
+      "status": "Completed",
+      "verified": true
+    }
+  ],
+  "experience": [],
+  "achievements": [
+    "Published a research paper on GDP forecasting using machine learning: \"Analyzing India's GDP: A Time Series-Based Forecasting Approach\".",
+    "Solved 100+ data structures and algorithms problems on LeetCode.",
+    "Hands-on exposure to Oracle SQL, RDBMS design and JavaScript-based frontend development.",
+    "Familiar with SDLC practices including requirements analysis, design, development, testing and production support."
+  ],
+  "certifications": [
+    {
+      "name": "Full Stack Data Science",
+      "issuer": "Naresh IT",
+      "year": "2023",
+      "url": "",
+      "verified": true
+    },
+    {
+      "name": "Core Java and SQL Training",
+      "issuer": "JSpider",
+      "year": "",
+      "url": "",
+      "verified": true
+    }
+  ],
+  "codingProfiles": [
+    {
+      "platform": "LeetCode",
+      "handle": "i_rishavv",
+      "url": "https://leetcode.com/u/i_rishavv/"
+    }
+  ],
+  "links": {
+    "github": "https://github.com/irishavv",
+    "linkedin": "https://www.linkedin.com/in/irishavv",
+    "portfolio": "https://rishav-portfolio-snowy.vercel.app/",
+    "leetcode": "https://leetcode.com/u/i_rishavv/"
+  },
+  "careerInterests": {
+    "preferredRoles": [
+      "Java Developer",
+      "Backend Developer",
+      "Full-Stack Developer",
+      "Software Engineer",
+      "Data Analyst"
+    ],
+    "preferredLocations": ["Hyderabad, India", "Open to relocation"],
+    "workType": "Full-time - immediate joiner"
+  }
+}
